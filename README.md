@@ -1,8 +1,5 @@
 # 🚀 Kairo - Kanban To-Do List
 
-<p align="center">
-  <img src="screenshots/banner.png" alt="Kairo Banner" width="100%"/>
-</p>
 
 <p align="center">
   <strong>Modern, şık ve performanslı bir Kanban board görev takip uygulaması.</strong>
@@ -24,7 +21,7 @@
      
   <img src="screenshots/Page2.jpeg" alt="Ana Ekran 2" width="250"/>
      
-  <img src="screenshots/drag_drop.png" alt="Ana Ekran 3" width="250"/>
+  <img src="screenshots/Page3.jpeg" alt="Ana Ekran 3" width="250"/>
 </p>
 
 <p align="center">
