@@ -20,33 +20,32 @@
 ## 📸 Ekran Görüntüleri
 
 <p align="center">
-  <img src="screenshots/home_screen.png" alt="Ana Ekran" width="250"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="screenshots/add_task.png" alt="Görev Ekleme" width="250"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="screenshots/drag_drop.png" alt="Sürükle Bırak" width="250"/>
+  <img src="screenshots/Page1.jpeg" alt="Ana Ekran" width="250"/>
+     
+  <img src="screenshots/Page2.jpeg" alt="Ana Ekran 2" width="250"/>
+     
+  <img src="screenshots/drag_drop.png" alt="Ana Ekran 3" width="250"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/edit_task.png" alt="Görev Düzenleme" width="250"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="screenshots/tablet_view.png" alt="Tablet Görünümü" width="400"/>
+  <img src="screenshots/TaskOlustur.jpeg" alt="Görev Ekleme" width="250"/>
+     
 </p>
 
 ---
 
 ## ✨ Özellikler
 
-| Özellik | Açıklama |
-|---------|----------|
-| 🌙 **Dark Theme** | Göz yormayan modern karanlık tema, gradient vurgularla premium hissiyat |
-| 🎨 **Gradient & Glow Efektleri** | Butonlarda, kartlarda ve durum göstergelerinde canlı gradient geçişleri |
-| 📋 **Kanban Board** | Üç kolonlu yapı: **To-Do**, **Devam Eden**, **Tamamlanan** |
-| ✏️ **CRUD İşlemleri** | Görev oluşturma, düzenleme, silme ve durum değiştirme |
-| 🔀 **Sürükle & Bırak** | `LongPressDraggable` ile görevleri kolonlar arasında sürükleyerek taşıma |
-| 📱 **Responsive Tasarım** | Mobilde tab görünümü, tablette ve masaüstünde yan yana kolonlar |
-| ⚡ **Performans Odaklı** | `RepaintBoundary`, pre-computed renkler, `const` widget'lar ile optimize edilmiş |
-| 🏗️ **Temiz Mimari** | Feature-first klasör yapısı ile sürdürülebilir ve ölçeklenebilir kod |
+| Özellik                          | Açıklama                                                                         |
+| -------------------------------- | -------------------------------------------------------------------------------- |
+| 🌙 **Dark Theme**                | Göz yormayan modern karanlık tema, gradient vurgularla premium hissiyat          |
+| 🎨 **Gradient & Glow Efektleri** | Butonlarda, kartlarda ve durum göstergelerinde canlı gradient geçişleri          |
+| 📋 **Kanban Board**              | Üç kolonlu yapı: **To-Do**, **Devam Eden**, **Tamamlanan**                       |
+| ✏️ **CRUD İşlemleri**            | Görev oluşturma, düzenleme, silme ve durum değiştirme                            |
+| 🔀 **Sürükle & Bırak**           | `LongPressDraggable` ile görevleri kolonlar arasında sürükleyerek taşıma         |
+| 📱 **Responsive Tasarım**        | Mobilde tab görünümü, tablette ve masaüstünde yan yana kolonlar                  |
+| ⚡ **Performans Odaklı**          | `RepaintBoundary`, pre-computed renkler, `const` widget'lar ile optimize edilmiş |
+| 🏗️ **Temiz Mimari**             | Feature-first klasör yapısı ile sürdürülebilir ve ölçeklenebilir kod             |
 
 ---
 
@@ -119,17 +118,20 @@ flutter run
 ## 📱 Kullanım
 
 ### Görev Ekleme
+
 1. Sağ alttaki **"Görev Ekle"** FAB butonuna tıklayın
 2. Görev başlığı ve açıklamasını girin
 3. **Durum seçiciden** hangi kolona ekleneceğini seçin (To-Do / Devam Eden / Tamamlanan)
 4. **"Oluştur"** butonuna tıklayın
 
 ### Görev Taşıma (Drag & Drop)
+
 1. Bir görev kartına **uzun basın** (long press)
 2. Kartı istediğiniz kolona **sürükleyin**
 3. Bırakıldığında görevin durumu otomatik güncellenir
 
 ### Görev Düzenleme / Silme
+
 - Kart üzerindeki **⋯** menüsünden veya karta dokunarak düzenleyebilir/silebilirsiniz
 
 ---
@@ -138,30 +140,23 @@ flutter run
 
 ### Renk Paleti
 
-| Renk | Hex | Kullanım |
-|------|-----|----------|
-| 🟣 Primary | `#7C3AED` | Ana vurgu rengi, butonlar |
-| 🩷 Secondary | `#EC4899` | Gradient geçişleri |
-| 🔵 To-Do | `#3B82F6` | Yapılacak görevler |
-| 🟡 In Progress | `#F59E0B` | Devam eden görevler |
-| 🟢 Done | `#10B981` | Tamamlanan görevler |
-| ⬛ Background | `#0F0F1A` | Ana arka plan |
-| 🌑 Surface | `#1A1A2E` | Kart ve dialog arka planları |
+| Renk           | Hex       | Kullanım                     |
+| -------------- | --------- | ---------------------------- |
+| 🟣 Primary     | `#7C3AED` | Ana vurgu rengi, butonlar    |
+| 🩷 Secondary   | `#EC4899` | Gradient geçişleri           |
+| 🔵 To-Do       | `#3B82F6` | Yapılacak görevler           |
+| 🟡 In Progress | `#F59E0B` | Devam eden görevler          |
+| 🟢 Done        | `#10B981` | Tamamlanan görevler          |
+| ⬛ Background   | `#0F0F1A` | Ana arka plan                |
+| 🌑 Surface     | `#1A1A2E` | Kart ve dialog arka planları |
 
 ### Performans Optimizasyonları
+
 - `BackdropFilter` kullanılmadan glassmorphism efekti (opacity + border ile)
 - `RepaintBoundary` ile TextFormField izolasyonu
 - `MediaQuery.removeViewInsets` ile çift rebuild engelleme
 - `const` constructor'lar ve pre-computed renkler
 - `LongPressDraggable` ile scroll-drag çakışması engelleme
-
----
-
-## 📂 Demo Video
-
-<p align="center">
-  <img src="screenshots/demo.gif" alt="Demo" width="300"/>
-</p>
 
 ---
 
